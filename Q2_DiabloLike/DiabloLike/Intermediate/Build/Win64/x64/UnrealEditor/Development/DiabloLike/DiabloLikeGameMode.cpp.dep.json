@@ -1,0 +1,31 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\source\\diablolike\\diablolikegamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\intermediate\\build\\win64\\x64\\diablolikeeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\diablolike\\definitions.diablolike.h",
+            "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\source\\diablolike\\diablolikegamemode.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\intermediate\\build\\win64\\unrealeditor\\inc\\diablolike\\uht\\diablolikegamemode.generated.h",
+            "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\source\\diablolike\\diablolikeplayercontroller.h",
+            "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\intermediate\\build\\win64\\unrealeditor\\inc\\diablolike\\uht\\diablolikeplayercontroller.generated.h",
+            "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\source\\diablolike\\diablolikecharacter.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\users\\mrtro\\documents\\github\\q2_diablolike\\diablolike\\intermediate\\build\\win64\\unrealeditor\\inc\\diablolike\\uht\\diablolikecharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

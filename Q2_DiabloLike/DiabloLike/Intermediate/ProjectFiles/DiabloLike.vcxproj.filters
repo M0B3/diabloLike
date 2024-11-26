@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\DiabloLike.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DiabloLike.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\DiabloLikeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\DiabloLike">
+      <UniqueIdentifier>{8243F1C0-C4F6-3480-ABDE-D8697D9B7660}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DiabloLike\DiabloLike.Build.cs">
+      <Filter>Source\DiabloLike</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\DiabloLike\DiabloLike.cpp">
+      <Filter>Source\DiabloLike</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DiabloLike\DiabloLike.h">
+      <Filter>Source\DiabloLike</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DiabloLike\DiabloLikeCharacter.cpp">
+      <Filter>Source\DiabloLike</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DiabloLike\DiabloLikeCharacter.h">
+      <Filter>Source\DiabloLike</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DiabloLike\DiabloLikeGameMode.cpp">
+      <Filter>Source\DiabloLike</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DiabloLike\DiabloLikeGameMode.h">
+      <Filter>Source\DiabloLike</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DiabloLike\DiabloLikePlayerController.cpp">
+      <Filter>Source\DiabloLike</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DiabloLike\DiabloLikePlayerController.h">
+      <Filter>Source\DiabloLike</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

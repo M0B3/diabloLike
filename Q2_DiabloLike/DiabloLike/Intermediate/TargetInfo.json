@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "DiabloLike",
+			"Path": "..\\Source\\DiabloLike.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "DiabloLikeEditor",
+			"Path": "..\\Source\\DiabloLikeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
