@@ -53,6 +53,13 @@ void ADiabloLikePlayerController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Triggered, this, &ADiabloLikePlayerController::OnTouchTriggered);
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Completed, this, &ADiabloLikePlayerController::OnTouchReleased);
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Canceled, this, &ADiabloLikePlayerController::OnTouchReleased);
+
+		// Setup aim input events
+		EnhancedInputComponent->BindAction(AimClickAction, ETriggerEvent::Started, this, &ADiabloLikePlayerController::OnAimStarted);
+		EnhancedInputComponent->BindAction(AimClickAction, ETriggerEvent::Triggered, this, &ADiabloLikePlayerController::OnAimTriggered);
+		EnhancedInputComponent->BindAction(AimClickAction, ETriggerEvent::Completed, this, &ADiabloLikePlayerController::OnAimReleased);
+		EnhancedInputComponent->BindAction(AimClickAction, ETriggerEvent::Canceled, this, &ADiabloLikePlayerController::OnAimReleased);
+
 	}
 	else
 	{
@@ -68,6 +75,8 @@ void ADiabloLikePlayerController::OnInputStarted()
 // Triggered every frame when the input is held down
 void ADiabloLikePlayerController::OnSetDestinationTriggered()
 {
+	if (bIsAiming) {return;}
+
 	// We flag that the input is being pressed
 	FollowTime += GetWorld()->GetDeltaSeconds();
 	
@@ -100,6 +109,8 @@ void ADiabloLikePlayerController::OnSetDestinationTriggered()
 
 void ADiabloLikePlayerController::OnSetDestinationReleased()
 {
+	if (bIsAiming) { return; }
+
 	// If it was a short press
 	if (FollowTime <= ShortPressThreshold)
 	{
@@ -122,4 +133,34 @@ void ADiabloLikePlayerController::OnTouchReleased()
 {
 	bIsTouch = false;
 	OnSetDestinationReleased();
+}
+
+void ADiabloLikePlayerController::OnAimStarted()
+{
+	bIsAiming = true;
+	StopMovement();
+}
+
+void ADiabloLikePlayerController::OnAimTriggered()
+{
+	if (bIsAiming)
+	{
+		FHitResult Hit;
+		bool bHitSuccessful = GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, Hit);
+
+		if (bHitSuccessful)
+		{
+			APawn* ControlledPawn = GetPawn();
+			if (ControlledPawn != nullptr)
+			{
+				FRotator NewRotation = (Hit.Location - ControlledPawn->GetActorLocation()).Rotation();
+				ControlledPawn->SetActorRotation(NewRotation);
+			}
+		}
+	}
+}
+
+void ADiabloLikePlayerController::OnAimReleased()
+{
+	bIsAiming = false;
 }

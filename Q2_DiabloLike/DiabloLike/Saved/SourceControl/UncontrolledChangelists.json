@@ -1,0 +1,30 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Player/BP_TopDownPlayerController.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Player/BP_TopDownCharacter.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Input/Actions/IA_SetDestination_Click.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Input/Actions/IA_SetDestination_Touch.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Input/IMC_Default.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Input/Actions/IA_Aim_Click.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/TopDown/Maps/TopDownMap.umap",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/MyDiabloLikeGameMode.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Player/MyDiabloLikeCharacter.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Player/MyDiabloLikePlayerController.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/Characters/Mannequins/Animations/ABP_Manny.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Blueprints/BP_TopDownCharacter.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Blueprints/BP_TopDownPlayerController.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/TopDown/Blueprints/BP_TopDownPlayerController.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/TopDown/Input/IMC_Default.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/TopDown/Input/Actions/IA_SetDestination_Touch.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/TopDown/Input/Actions/IA_SetDestination_Click.uasset",
+				"C:/Users/mrtro/Documents/GitHub/diabloLike/Q2_DiabloLike/DiabloLike/Content/BlueprintClass/Input/Actions/IA_Aim.uasset"
+			]
+		}
+	]
+}

@@ -78,6 +78,11 @@ struct Z_Construct_UClass_ADiabloLikePlayerController_Statics
 		{ "ToolTip", "Jump Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AimClickAction_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "DiabloLikePlayerController.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SetDestinationTouchAction_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Input" },
@@ -94,6 +99,7 @@ struct Z_Construct_UClass_ADiabloLikePlayerController_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FXCursor;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContext;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SetDestinationClickAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_AimClickAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SetDestinationTouchAction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -106,12 +112,14 @@ const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADiabloLikePlay
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_FXCursor = { "FXCursor", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ADiabloLikePlayerController, FXCursor), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FXCursor_MetaData), NewProp_FXCursor_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ADiabloLikePlayerController, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMappingContext_MetaData), NewProp_DefaultMappingContext_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_SetDestinationClickAction = { "SetDestinationClickAction", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ADiabloLikePlayerController, SetDestinationClickAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SetDestinationClickAction_MetaData), NewProp_SetDestinationClickAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_AimClickAction = { "AimClickAction", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ADiabloLikePlayerController, AimClickAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AimClickAction_MetaData), NewProp_AimClickAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_SetDestinationTouchAction = { "SetDestinationTouchAction", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ADiabloLikePlayerController, SetDestinationTouchAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SetDestinationTouchAction_MetaData), NewProp_SetDestinationTouchAction_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADiabloLikePlayerController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_ShortPressThreshold,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_FXCursor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_DefaultMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_SetDestinationClickAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_AimClickAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADiabloLikePlayerController_Statics::NewProp_SetDestinationTouchAction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ADiabloLikePlayerController_Statics::PropPointers) < 2048);
@@ -155,10 +163,10 @@ ADiabloLikePlayerController::~ADiabloLikePlayerController() {}
 struct Z_CompiledInDeferFile_FID_Users_mrtro_Documents_GitHub_diabloLike_Q2_DiabloLike_DiabloLike_Source_DiabloLike_DiabloLikePlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ADiabloLikePlayerController, ADiabloLikePlayerController::StaticClass, TEXT("ADiabloLikePlayerController"), &Z_Registration_Info_UClass_ADiabloLikePlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADiabloLikePlayerController), 2216467685U) },
+		{ Z_Construct_UClass_ADiabloLikePlayerController, ADiabloLikePlayerController::StaticClass, TEXT("ADiabloLikePlayerController"), &Z_Registration_Info_UClass_ADiabloLikePlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADiabloLikePlayerController), 2269934642U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mrtro_Documents_GitHub_diabloLike_Q2_DiabloLike_DiabloLike_Source_DiabloLike_DiabloLikePlayerController_h_2887771553(TEXT("/Script/DiabloLike"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_mrtro_Documents_GitHub_diabloLike_Q2_DiabloLike_DiabloLike_Source_DiabloLike_DiabloLikePlayerController_h_3475847386(TEXT("/Script/DiabloLike"),
 	Z_CompiledInDeferFile_FID_Users_mrtro_Documents_GitHub_diabloLike_Q2_DiabloLike_DiabloLike_Source_DiabloLike_DiabloLikePlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_mrtro_Documents_GitHub_diabloLike_Q2_DiabloLike_DiabloLike_Source_DiabloLike_DiabloLikePlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
